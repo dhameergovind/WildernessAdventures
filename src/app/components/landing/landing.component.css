@@ -1,0 +1,21 @@
+.card-hot {
+  height: 75%;
+  padding: 5%;
+}
+
+.card-hot img {
+  height: 350px;
+}
+
+.card-hot-header {
+  display: block;
+  text-align: center;  
+}
+
+.list-item {
+    color: black;
+}
+
+.grid-list-div {
+    padding: 5%;
+}

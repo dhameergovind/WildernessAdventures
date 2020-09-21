@@ -1,0 +1,12 @@
+.card {
+    height: 83%;
+  }
+  
+  .card-header {
+      display: block;
+      text-align: center;  
+    }
+  
+  .card img {
+    height: 350px;
+  }
