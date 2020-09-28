@@ -10,6 +10,10 @@
     margin: 5%;
   } */
 
+  .white {
+      background: white;
+      color: black;
+  }
 
   .companyName{
     font-size: 150%;
