@@ -8,6 +8,7 @@ import { AppMaterialModule } from './app.material.module';
 import { LandingComponent } from './components/landing/landing.component';
 import { HeaderComponent } from './shared-ui/header/header.component';
 import { FeatureCardComponent } from './shared-ui/feature-card/feature-card.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FeatureCardComponent } from './shared-ui/feature-card/feature-card.comp
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AppMaterialModule
+    AppMaterialModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

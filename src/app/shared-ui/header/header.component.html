@@ -1,4 +1,4 @@
-<mat-toolbar>
+<!-- <mat-toolbar>
 	<span>Wilderness Adventures</span>
 	<span class="header-center-button">
 		<button mat-raised-button class="margin-5">Latest listings</button>
@@ -10,4 +10,40 @@
 			<mat-icon>home</mat-icon>Become a host
 		</button>
 	</span>
-</mat-toolbar>
+</mat-toolbar> -->
+
+<div> 
+	<mat-toolbar color="primary">
+	  <div fxShow="true" fxHide.gt-sm="true">
+		<button mat-icon-button (click)="sidenav.toggle()">
+		  <mat-icon>Menu</mat-icon>
+		</button>
+	  </div>
+  
+	  <a mat-button class="companyName" routerLink="/">
+		<span>Wilderness Adventures</span>
+	  </a>
+	  <span class="example-spacer"></span>
+	  <div fxShow="true" fxHide.lt-md="true">
+		<a mat-button routerLink="/about-us">Latest listings</a>
+		<a mat-button routerLink="/prices">Experiences</a>
+		<a mat-button routerLink="/start-page">Hot deal</a>
+		<mat-icon>home</mat-icon>Become a host
+	  </div>
+  
+	</mat-toolbar>
+	<mat-sidenav-container fxFlexFill class="example-container">
+  
+	  <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over"  opened="false" fxHide.gt-sm="true">
+		<div fxLayout="column">
+			<a mat-button routerLink="/about-us">Latest listings</a>
+			<a mat-button routerLink="/prices">Experiences</a>
+			<a mat-button routerLink="/start-page">Hot deal</a>
+			<mat-icon>home</mat-icon>Become a host		
+		</div>
+	  </mat-sidenav>
+	  <mat-sidenav-content fxFlexFill>
+		Awesome content
+	  </mat-sidenav-content>
+	</mat-sidenav-container>
+  </div>
